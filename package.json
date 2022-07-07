@@ -1,0 +1,26 @@
+{
+  "name": "fastfoot-tici",
+  "version": "1.0.0",
+  "description": "Es una compañía de alimentos enfocada en promover un estilo de vida saludable y contribuir a disminuir el impacto climático. Sabemos que las decisiones cotidianas que tomamos forman nuestros hábitos e inciden de forma directa en los recursos del planeta. Por eso desarrollamos comida rica, sustentable y saludable. Hace años trabajamos con nuestros proveedores para asegurar que los huevos que utilizamos para nuestros productos sean de granjas libres de jaulas, de productores pequeños y responsables. Orgullosos de compartirlo, invitamos a que más organizaciones se sumen a este movimiento.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ateneasn/fastfoot-tici.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ateneasn/fastfoot-tici/issues"
+  },
+  "homepage": "https://github.com/ateneasn/fastfoot-tici#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-generator": "^4.16.1"
+  }
+}
