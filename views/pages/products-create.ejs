@@ -1,20 +1,45 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>   
+</head>
 <html>
-    <%-include("../partials/head")%>
 <br>
-<body>
-    <%-include("../partials/header")%>  
-<br>  
-    <div class="register">
-    <form action="/products/create" method="POST" enctype="multipart/form-data">
-        <input type="text" name="nombre" placeholder="Nombre del produto">
-        <input type="text" name="ingredientes" placeholder="Ingredientes">
-        <input type="number" name="precio" placeholder="Precio de producto">
-        <input type="file" name="imagen" placeholder="Imagen de producto">    
-        <input type="submit" value="Crear producto">       
-    </form>
-    </div>
-    <br>
-    <%-include("../partials/footer")%>
-</body>
+    <%-include("../partials/head")%>
+    <body>
+    <%-include("../partials/header")%>
+        <div class="w-100">
+            <div class="registro">
+                <form action="/products/new/" method="POST" enctype="multipart/form-data">
+                    <% if(typeof errors != 'undefined'){ %>
+                        <ul class="claseNueva">
+                            <% for (let i = 0; i < errors.length; i++) { %>
+                                <li style="color:red; padding-left: 20px;" class="claseNueva">
+                                    <%= errors[i].msg %>
+                                </li>
+                            <% } %> 
+                        </ul>
+                    <% } %>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" value="">
+                    <br><br>
+                    <label>Ingredientes</label>
+                    <input type="text" name="ingredientes" value="">
+                    <br><br>
+                    <label>Precio</label>
+                    <input type="number" name="precio" value="">
+                    <br><br>
+                    <label>Imagen</label>
+                    <input type="file" name="imagen">
+                    <br><br>
+                    <label></label>
+                    <input type="submit" value="Agregar producto">
+                </form>
+            </div>
+        </div>
+        <br>
+        <%-include("../partials/footer")%>
+    </body>
 </html>

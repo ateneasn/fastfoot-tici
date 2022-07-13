@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-07-2022 a las 00:31:17
+-- Tiempo de generación: 13-07-2022 a las 18:27:54
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -40,10 +40,7 @@ CREATE TABLE `categorias` (
 INSERT INTO `categorias` (`id`, `nombre`, `imagen`) VALUES
 (1, 'ensaladas', 'icono-ensaladas.png'),
 (2, 'sandwiches', 'icono-sandwich.png'),
-(3, 'wraps', 'icono-wrap.png'),
-(4, 'bebidas', 'icono-bebidas.png'),
-(5, 'frutas', 'frutas.png'),
-(6, 'permitido', 'permitido.png');
+(4, 'bebidas', 'icono-bebidas.png');
 
 -- --------------------------------------------------------
 
@@ -75,11 +72,15 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre`, `ingredientes`, `precio`, `imagen`) VALUES
-(1, 'DE CAMPO', 'Hojas verdes, jamón, queso, pa', 500, 'de-campo.png'),
-(2, 'POLLO Y PALTA', 'Hojas verdes, variedad de tomates, cubos de queso, aceitunas negras, rillette de pollo y palta.', 600, 'pollo-y-palta.png'),
-(3, 'CAESER', 'Mix de lechuga, zanahoria, parmesano, pechuguita de pollo, croutons y aderezo ceasar.', 600, 'caeser.png'),
-(4, 'CAPRESSE', 'Variedad de tomates, aceitunas negras, mozzarella fresca y hojas de albahaca.', 600, 'capresse.png'),
-(5, 'ATÚN', 'Pan integral con hojas amargas, atún natural, rodajas de tomate.', 450, 'atun.png');
+(1, 'Árabe de pastrón', ' Hojas amarga, queso crema, cebollas caramelizadas, pepinillos, pastrón en pan árabe. Precio por uni', 303, 'arabe-de-pastron.jpg(1657637415211).jpg'),
+(2, 'Panqueque fresco', 'Hojas verdes, tomate y queso fresco tipo mozzarella. Precio por unidad', 300, 'panqueque-fresco.jpg(1657637475043).jpg'),
+(3, 'Wrap de ternera', 'Berenjenas asadas, pimientos, carne de ternera, hojas verdes, perejil.', 600, 'wrap-de-ternera.jpg(1657637636042).jpg'),
+(4, 'Yogures', 'Zanahoria, tomate o albahaca', 500, 'yogures.jpg(1657637668682).jpg'),
+(5, 'Jugo de remolacha', 'Remolacha, zanahorias y jugo de mandarina', 300, 'jugo-de-remolacha.jpg(1657637708940).jpg'),
+(6, 'Batido de kiwi', 'Licuado de kiwi con zumo de limón, menta y azúcar. Precio por unidad', 400, 'batido-de-kiwi.jpg(1657637744909).jpg'),
+(7, 'Kiwi con tomate', 'kiwis, tomates, tomates cherry anaranjados, orégano seco, hojas de menta y albahaca', 500, 'kiwi-con-tomate.jpg(1657637781452).jpg'),
+(8, 'Ensalada verde ', 'Remolacha, zanahorias y jugo de mandarina', 400, 'ensalada-verde.jpg(1657637817412).jpg'),
+(9, 'Ensalada asada', 'Pimiento rojo, Berenjena, Tomate, Cebolla, Limón,Lima, Naranja, Comino molido, Perejil o tomillo, Pi', 600, 'ensalada-asada.jpg(1657637852075).jpg');
 
 --
 -- Índices para tablas volcadas
@@ -118,7 +119,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Restricciones para tablas volcadas

@@ -5,7 +5,7 @@
     <%-include("../partials/header")%>  
     
     <div class="div-productDetail">
-        <div style="background-color: #C9D16F; padding-bottom: 40px; padding-top: 40px;">
+        <div style="background-color: #C9D16F; padding-bottom: 40px; padding-top: 40px; padding-left: 40px;">
           <img style="width: 400px;border-radius: 2%;margin-bottom: 10px;margin-top: 10px; margin-left: 450px;display:inline-block;" src="/img/products/<%= producto.imagen %>">
           <h1 style="color: #FFFF ; font-size: 34px;margin-bottom: 25px"> <!-- <span>Nombre: </span> -->
             <span><%= producto.nombre %></span>
@@ -18,18 +18,14 @@
           <h2 style="color: #87AFA7 ;font-size: 25px; margin-bottom: 25px;"> <!-- <span>Precio:</span> -->
             $<%= producto.precio %>
           </h2>
-          <a href="/products/edit/<%= producto.idProduct%>" style="text-decoration: none ; font-size:20px; color:white; background-color:#E8572F;padding: 5px; width: 35%; border-radius: 5px ;">editar producto</a>
-            </div><br>
-            <div class="register">
-            <form action="/products/create" method="POST" enctype="multipart/form-data">
-                <input type="text" name="nombre" placeholder="Nombre del produto">
-                <input type="text" name="ingredientes" placeholder="Ingredientes">
-                <input type="number" name="precio" placeholder="Precio de producto">
-                <input type="file" name="imagen" placeholder="Imagen de producto">         
+          <div class="div-BTN" style="display: flex; justify-content: space-around;">
+            <a href="/products/edit/<%= producto.id%>" type="button" class="btn" style="background-color: #274277; color: white; margin-top: 20px;">Editar producto</a>
+            <form action="/products/delete/<%= producto.id %>" method="POST">
+              <button type="submit" class="btn" style= "background-color: #274277; color: white; margin-top: 20px;">Eliminar producto</button>
             </form>
-            </div>
+          </div>
         </div>
-    
+        </div>
 <br>
     <%-include("../partials/footer")%>
 </body>
