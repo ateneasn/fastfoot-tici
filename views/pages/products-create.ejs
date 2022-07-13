@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <%-include("../partials/head")%>
+<br>
+<body>
+    <%-include("../partials/header")%>  
+<br>  
+    <div class="register">
+    <form action="/products/create" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nombre" placeholder="Nombre del produto">
+        <input type="text" name="ingredientes" placeholder="Ingredientes">
+        <input type="number" name="precio" placeholder="Precio de producto">
+        <input type="file" name="imagen" placeholder="Imagen de producto">    
+        <input type="submit" value="Crear producto">       
+    </form>
+    </div>
+    <br>
+    <%-include("../partials/footer")%>
+</body>
+</html>

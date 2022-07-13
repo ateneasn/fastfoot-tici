@@ -1,12 +1,247 @@
 @import url("https://use.typekit.net/wsd2oxj.css"); /*Tipografía principal bello caps pro*/
 @import url("https://use.typekit.net/yrf1bfv.css"); /*Tipografía footer Elza*/
+
 body{
     background-image: url("../img/background.png");
 }
+
 footer{
     font-family: "Elza Narrow Bold", sans-serif;
+    padding: 30px;
+    padding-right: 50px;
 }
+
 .drop {
     float: right; 
+    padding-top: 60px; 
+}
+.products-conteiner {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-spacing: 0px;
+    max-width: 40%;
+}
+
+.register {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.precio {
+    font-family: "Elza Narrow Bold"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head.icon{
+    max-width: 100000px;
+}
+
+a{font-family: var(--mochipop);
+    text-decoration: none;
+    color: black ;
+    display: contents;}
+
+html {
+
+    font-family: var(--mochipop);
+}
+
+.fa-dog:before {
+    content: "\f6d3";
+    display: flex;
+    justify-content: center;
+    color: #222d56;
+}
+
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ashe {
+    color: var(--azul-claro)
+}
+
+section.banner img {
+    width: 100%;
+    background-color: orange;
+    max-width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-grow: 2;
+}
+
+.top-header h1 {
+    color: var(--blanco);
+    margin-left: 10px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+main section div article {
+    background-color: var(--blanco) !important;
+    margin: 10px 10px;
+}
+
+main section{
+    padding: 10px 10px;;
+    font-size: 75%;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 20px rgb(100 100 100);
+}
+ 
+main section article img {
+    width: 100%;
+}
+  
+.price {
+    font-size: var(--text-lg);
+    color:#87AFA7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+  
+.discount, .description {
+    font-size: var(--text-md);
+}
+  
+.description {
+    color: #BAE26F;
+    font-size: 15px;;
+    font-family: "Elza Narrow Bold", sans-serif;
+}
+
+  
+main section article:hover {
+    opacity: 1;
+}
+  
+main section article i, .discount {
+    color: #274277
+}
+
+main section article i {
+    font-size: var(--text-md);
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--blanco);
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 0.3s ease-in;
+}
+  
+main section article:hover i {
+    transform: rotate(-90deg);
+}
+  
+main section h3 {
+    margin: 20px 0px;
+}
+  
+article div.product-card {
+    border: 1px solid var(--blanco);
     padding: 15px;
-  }
+    position: relative;
+}
+
+.fa-truck:before {
+    content: "\f0d1";
+    color: black;
+}
+
+
+
+@media screen and (min-width: 538px){
+   
+    
+    .products-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url("/img/Background naranja.png") !important;
+        background-repeat: repeat !important
+    }
+    .products-container div img {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 400px;
+    }
+    
+    .products-container article {
+        max-width: 45%;
+    }   
+}
+
+@media screen and (min-width: 700px) {
+    .products-container article {
+      max-width: 27%;
+    }
+}
+
+@media screen and (min-width:949px){
+   
+
+    .products-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-repeat: repeat !important
+    }
+    .products-container div img {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 400px;
+    }
+    
+    .products-container article {
+        max-width: 30%;
+    }   
+}
+
+@media screen and (min-width: 949px) {
+    .products-container article {
+      max-width: 27%;
+    }
+}

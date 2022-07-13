@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>    
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<html>
+<br>
+    <%-include("../partials/head")%>
+    <body>
+    <%-include("../partials/header")%   
+        <div class="w-100">
+            <div class="registro">
+                <form action="/products/edit/<%= products.id %>" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="nombre" placeholder="Nombre del produto">
+                    <input type="text" name="ingredientes" placeholder="Ingredientes" value="<%= products.ingredientes%>">
+                    <input type="number" name="precio" placeholder="Precio de producto value="<%= products.precio%>"">
+                    <input type="file" name="imagen" placeholder="Imagen de producto" value="<%= products.imagen%>">    
+                    <input type="submit" value="Editar producto">       
+                </form>
+            </div>
+        </div>
+        <br>
+        <%-include("../partials/footer")%>
+    </body>
+</html>
