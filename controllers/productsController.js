@@ -38,14 +38,16 @@ module.exports = {
           oldData: req.body
         });
         }
-        let producto = db.Producto.create({
+        db.Producto.create({
             nombre:req.body.nombre,
             ingredientes:req.body.ingredientes,
             precio:req.body.precio,
             imagen:req.file.filename,
-        })
-        res.render("products-details.ejs",{producto})
-    },
+        }) .then(producto => {
+            res.render("products-details.ejs",
+            {producto})
+    })
+},
     updateProduct: (req,res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
